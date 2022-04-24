@@ -23,7 +23,7 @@ function App() {
 		const timerId = setTimeout(() => {
 			dispatch(updateMessages())
 		}, 5000)
-		if (state.message.length > 55) {
+		if (state.message.length > 65) {
 			clearTimeout(timerId)
 		}
 		return () => clearTimeout(timerId)
